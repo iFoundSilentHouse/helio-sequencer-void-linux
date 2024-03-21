@@ -2,7 +2,7 @@
 Helio Workstation template and builds for void-linux.
 [Link to Helio Workstation website](https://helio.fm/)
 
-### Installing the binary package
+## Installing the binary package
 #### Method 1 - updates handled by xbps-install
 
 Add the releases page as a repository:
