@@ -1,5 +1,5 @@
 # Helio Workstation  
-Helio Workstation template and builds for void-linux.
+Helio Workstation template and builds for void linux.
 [Link to Helio Workstation website](https://helio.fm/)
 
 ## Installing the binary package
