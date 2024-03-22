@@ -14,7 +14,7 @@ EOF
 xbps-install -Su helio-sequencer
 ```
 
-First `xbps-install -S` run it will ask to import the repository key, same as [bd:18:fc:14:f9:0e:ac:78:20:35:0e:7a:2b:0f:0d:68.plist](void-packages/repo-keys/bd:18:fc:14:f9:0e:ac:78:20:35:0e:7a:2b:0f:0d:68.plist).
+First `xbps-install -S` run it will ask to import the repository key. For glibc x86_64 it's same as [bd:18:fc:14:f9:0e:ac:78:20:35:0e:7a:2b:0f:0d:68.plist](void-packages/repo-keys/x86_64/bd:18:fc:14:f9:0e:ac:78:20:35:0e:7a:2b:0f:0d:68.plist).
 
 #### Method 2 - manual update
 

@@ -1,0 +1,21 @@
+diff --git a/ThirdParty/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp b/modules/juce_core/native/juce_linux_SystemStats.cpp
+--- a/ThirdParty/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp	2024-03-20 18:41:16.071998134 +0600
++++ b/ThirdParty/JUCE/modules/juce_core/native/juce_linux_SystemStats.cpp	2024-03-20 18:45:59.488485842 +0600
+@@ -198,7 +198,7 @@
+ 
+ String SystemStats::getUserLanguage()
+ {
+-   #if JUCE_BSD
++   #if JUCE_BSD || !defined(__GLIBC__)
+     if (auto langEnv = getenv ("LANG"))
+         return String::fromUTF8 (langEnv).upToLastOccurrenceOf (".UTF-8", false, true);
+ 
+@@ -210,7 +210,7 @@
+ 
+ String SystemStats::getUserRegion()
+ {
+-   #if JUCE_BSD
++   #if JUCE_BSD || !defined(__GLIBC__)
+     return {};
+    #else
+     return getLocaleValue (_NL_IDENTIFICATION_TERRITORY);
