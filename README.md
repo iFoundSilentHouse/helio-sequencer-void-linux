@@ -1,4 +1,4 @@
-# Helio Workstation  
+# Helio Workstation
 Helio Workstation template and builds for void linux.
 [Link to Helio Workstation website](https://helio.fm/)
 

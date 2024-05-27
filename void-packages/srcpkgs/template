@@ -1,10 +1,9 @@
 # Template file for 'helio-sequencer'
 pkgname=helio-sequencer
-version=3.12
+version=3.13
 revision=1
 build_style=gnu-makefile
 make_build_args="-C Projects/LinuxMakefile"
-make_build_target="all strip"
 hostmakedepends="pkg-config"
 makedepends="freetype-devel libX11-devel libXinerama-devel libXrandr-devel
 libXcursor-devel libXcomposite-devel MesaLib-devel libfreeglut-devel
@@ -13,15 +12,14 @@ short_desc="One music sequencer for all major platforms, desktop and mobile"
 maintainer="IFoundSilentHouse <adeptslab@gmail.com>"
 license="GPL-3.0-or-later, MIT, custom:JUCE"
 homepage="https://helio.fm/"
-changelog="https://github.com/helio-fm/helio-sequencer/blob/develop/CHANGELOG.md
-"
+changelog="https://github.com/helio-fm/helio-sequencer/blob/develop/CHANGELOG.md"
 _hopscotch_map_vers=2.3.1
 _juce_commit=159e86a56f03b485ba276fbd01241504d87d5141
 distfiles="https://github.com/helio-fm/helio-sequencer/archive/refs/tags/${version}.tar.gz
 https://github.com/Tessil/hopscotch-map/archive/refs/tags/v${_hopscotch_map_vers}.tar.gz
  https://github.com/helio-fm/JUCE/archive/${_juce_commit}.tar.gz
 "
-checksum="6c5654e7ce3b0e3f7c7ffb99654b2bad6585b5122d37c8769c961e45332f560a
+checksum="660ca66b0d51d3bf8948ea419c4a92aa5b13c6cae1a6b289af221f506799cbbe
  53dab49005cd5dc859f2546d0d3eef058ec7fb3b74fc3b19f4965a9a151e9b20
  d11bc2c70b51ac3aff6b14d5df4f3eaefde1db3a62a8cc32dd2dd5feebb08bf4"
 
@@ -32,7 +30,6 @@ skip_extraction="
 
 if [ "$XBPS_TARGET_LIBC" = musl ]; then
 	makedepends+=" libexecinfo-devel"
- 	LDFLAGS+=" -lexecinfo"
 fi
 
 if [[ "$XBPS_TARGET_WORDSIZE" -eq 32 ]]; then
@@ -49,9 +46,6 @@ post_extract() {
 
 do_install() {
 	vbin Projects/LinuxMakefile/build/helio
-}
-
-post_install() {
 	local _i
 	local _dpdir=Projects/Deployment/Linux/Debian/x64/usr/share/applications
 	local
