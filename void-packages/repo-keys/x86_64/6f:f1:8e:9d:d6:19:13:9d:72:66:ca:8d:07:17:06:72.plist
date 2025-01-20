@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>public-key</key>
+	<data>LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF0czlTTXJNRzFkOFdSbk1nOFFsVQo1NUJiOVcwQk16OXEzWHpkUVdMMlJ3d0hiSHBrSnNCM080eklhTGtxNjh5czlKWTU5T013Qng2L1hhSkkySnlMCnN0VDgzT1llMmN6a3FpaTFRdk1iL3dNWVlKMnZGdUloVndUUEdCM094Rk4ydnMvTk5pb3dqeFBmTXVEQzhZZTMKTm45K3dqb2NBVGVHazFsaExzbmhFNW12NE9YVldXekdYSWNMQlBpbkc2NG5ZWU56cVJWTGVMUnErSnJoMjZRWQpRWW9ZaEV0dHRMSGlUbnpNSzllSjFRb1BYNGdQUGxtWnJVcURFWHF3RkJrRnp0WFNCOFd0c284eTdhajdZVzZLCmZ3T0JNc2pYZXpPMFV5UUVoTzdSSGRhMTNySVBCUjdqSVMxOEg4QzBUUDQvblJhQytSREhIUTBtbkxad0pQRkoKa3dJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==</data>
+	<key>public-key-size</key>
+	<integer>2048</integer>
+	<key>signature-by</key>
+	<string>iFoundSilentHouse</string>
+</dict>
+</plist>
