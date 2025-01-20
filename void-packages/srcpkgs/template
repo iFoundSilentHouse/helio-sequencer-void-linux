@@ -1,6 +1,6 @@
 # Template file for 'helio-sequencer'
 pkgname=helio-sequencer
-version=3.13
+version=3.14
 revision=1
 build_style=gnu-makefile
 make_build_args="-C Projects/LinuxMakefile"
@@ -12,16 +12,17 @@ short_desc="One music sequencer for all major platforms, desktop and mobile"
 maintainer="IFoundSilentHouse <adeptslab@gmail.com>"
 license="GPL-3.0-or-later, MIT, custom:JUCE"
 homepage="https://helio.fm/"
-changelog="https://github.com/helio-fm/helio-sequencer/blob/develop/CHANGELOG.md"
+changelog="https://github.com/helio-fm/helio-sequencer/blob/develop/CHANGELOG.md
+"
 _hopscotch_map_vers=2.3.1
-_juce_commit=159e86a56f03b485ba276fbd01241504d87d5141
+_juce_commit=2186c410ea012619228347f4468f9af013a1a15c
 distfiles="https://github.com/helio-fm/helio-sequencer/archive/refs/tags/${version}.tar.gz
 https://github.com/Tessil/hopscotch-map/archive/refs/tags/v${_hopscotch_map_vers}.tar.gz
  https://github.com/helio-fm/JUCE/archive/${_juce_commit}.tar.gz
 "
-checksum="660ca66b0d51d3bf8948ea419c4a92aa5b13c6cae1a6b289af221f506799cbbe
+checksum="c1d7be2a9a79c8c1f47577605009b77d4b0a10fa035df710ee84e497cf9c1f2b
  53dab49005cd5dc859f2546d0d3eef058ec7fb3b74fc3b19f4965a9a151e9b20
- d11bc2c70b51ac3aff6b14d5df4f3eaefde1db3a62a8cc32dd2dd5feebb08bf4"
+ 06571768bf22648f48e2d0dfd61a9c924cfef635dc2f806b81f9684abb2e1f9c"
 
 skip_extraction="
  v${_hopscotch_map_vers}.tar.gz
